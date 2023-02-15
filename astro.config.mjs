@@ -2,6 +2,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 import { defineConfig } from 'astro/config';
+import astroI18next from "astro-i18next";
 
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
@@ -35,6 +36,7 @@ export default defineConfig({
         applyBaseStyles: false,
       },
     }),
+    astroI18next(),
     sitemap(),
     image({
       serviceEntryPoint: '@astrojs/image/sharp',
