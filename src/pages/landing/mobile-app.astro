@@ -1,12 +1,14 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
+import { changeLanguage } from "i18next";
+import Layout from "~/layouts/PageLayout.astro";
+import Header from "~/components/widgets/Header.astro";
+import Hero2 from "~/components/widgets/Hero2.astro";
+import CallToAction from "~/components/widgets/CallToAction.astro";
 
-import Header from '~/components/widgets/Header.astro';
-import Hero2 from '~/components/widgets/Hero2.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+changeLanguage("fr");
 
 const meta = {
-  title: "Mobile App Landing Page",
+    title: "Mobile App Landing Page",
 };
 ---
 

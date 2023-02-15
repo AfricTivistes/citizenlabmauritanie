@@ -6,13 +6,14 @@ import BasicScripts from '~/components/common/BasicScripts.astro';
 
 import { MetaSEO } from '~/types';
 import { SITE } from '~/config.mjs';
+import i18next from 'i18next';
 
 export interface Props {
   meta?: MetaSEO;
 }
 
 const { meta = {} } = Astro.props;
-const { language = 'en', textDirection = 'ltr' } = SITE;
+const { language = i18next.language, textDirection = 'ltr' } = SITE;
 ---
 
 <!DOCTYPE html>
