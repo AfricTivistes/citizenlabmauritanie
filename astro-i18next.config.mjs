@@ -2,4 +2,9 @@
 export default {
     defaultLocale: "fr",
     locales: ["ar", "fr"],
+    routes: {
+        ar: {
+            "index": "index",
+        },
+    }
 };
