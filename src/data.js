@@ -3,62 +3,50 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Landing',
+      text: 'CitizenLab',
       links: [
         {
-          text: 'Sass',
+          text: 'À propos',
           href: getPermalink('/landing/saas'),
         },
         {
-          text: 'Startup',
+          text: 'Initiatives',
           href: getPermalink('/landing/startup'),
         },
         {
-          text: 'Mobile App',
+          text: 'Équipe',
           href: getPermalink('/landing/mobile-app'),
         },
       ],
     },
     {
-      text: 'Pages',
+      text: 'Actualités',
+      href: getBlogPermalink(),
+    },
+    {
+      text: 'Droit et Libertés',
+      href: '#',
+    },
+    {
+      text: 'Ressources',
       links: [
         {
-          text: 'Features',
-          href: '#',
-        },
-        {
-          text: 'Pricing',
-          href: '#',
-        },
-        {
-          text: 'About us',
-          href: '#',
-        },
-        {
-          text: 'Contact',
-          href: '#',
-        },
-        {
-          text: 'Terms',
+          text: 'Publications',
           href: getPermalink('/terms'),
         },
         {
-          text: 'Privacy policy',
+          text: 'Médiathèque',
           href: getPermalink('/privacy'),
         },
       ],
     },
     {
-      text: 'Widgets',
+      text: 'Contacts',
       href: '#',
-    },
-    {
-      text: 'Blog',
-      href: getBlogPermalink(),
     },
   ],
   actions: [
-    { type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }
+    { type: 'button', text: 'Téléchargeur', href: 'https://citizenlabmauritanie.netlify.app' }
   ],
 };
   
