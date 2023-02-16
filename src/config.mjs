@@ -1,4 +1,5 @@
 import defaultImage from './assets/images/default.png';
+import { t } from "i18next";
 
 const CONFIG = {
   name: 'Africtivistes Citizen Lab Mauritanie',
@@ -7,14 +8,14 @@ const CONFIG = {
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'Africtivistes Citizen Lab Mauritanie — Votre plateforme d’information citoyenne',
+  title: t("site.title"),
   description:
     '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
-  language: 'en',
+  language: '',
   textDirection: 'ltr',
 
   dateFormatter: new Intl.DateTimeFormat('en', {
