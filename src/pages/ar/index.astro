@@ -26,21 +26,23 @@ const meta = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
-    callToAction2={{ text: 'Learn more', href: '#features' }}
+    callToAction={{
+      text: t('site.telecharger'),
+      href: 'https://github.com/onwidget/astrowind',
+      icon: 'tabler:download',
+    }}
+    callToAction2={{ text: t('site.more'), href: '#features' }}
     image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
       {t('site.slogan')}
+      <span class="text-accent dark:text-white highlight"> {t('site.slogan1')}</span>
+
+      {t('site.slogan2')}
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 2.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-green-600">AstroWind: Production-ready.</span> Suitable for Startups,
-      Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.
+      {t('site.info-projet')}
     </Fragment>
   </Hero>
 

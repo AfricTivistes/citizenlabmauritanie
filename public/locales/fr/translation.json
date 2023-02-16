@@ -1,7 +1,9 @@
 {
   "site": {
     "title": "Africtivistes Citizen Lab Mauritanie — Votre plateforme d’information citoyenne",
-    "slogan": "Votre plateforme d’information citoyenne en Mauritanie",
+    "slogan": "Votre plateforme d’information ",
+    "slogan1": "citoyenne ",
+    "slogan2": "en Mauritanie",
     "a-propos": "À propos",
     "initiative": "Initiatives",
     "equipe": "Équipe",
@@ -11,6 +13,10 @@
     "publications": "Publications",
     "mediatheque": "Médiathéque",
     "contact": "Contacts",
-    "telecharger": "Télécharger"
+    "telecharger": "Télécharger",
+    "info-projet": "Promouvoir la participation citoyenne et la démocratie participative. ainsi que d’impulser des nouvelles dynamiques par l’utilisation de la technologie citoyenne (civic tech)",
+    "more":"Lire plus"
+    
+
   }
 }
