@@ -1,0 +1,49 @@
+---
+export const prerender = true;
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/WPLayout.astro';
+import { getNodeByURI, getAllUris } from "../utils/api";
+import Single from "../components/templates/Single.astro";
+const uri = `/${Astro.params.uri}/`;
+const data = await getNodeByURI(uri);
+const node = data.nodeByUri;
+
+const meta = {
+  title: node.title,
+  description: SITE.description,
+  ogType: 'blog'
+};
+
+export async function getStaticPaths(){
+  return await getAllUris();
+}
+
+function resolveContentTemplate(node){ 
+    let template;
+    switch(node.__typename){
+        case 'Post':
+            template = Single;
+            break;
+        case 'Page':
+            template = Single;
+            break;
+        case 'Category':
+            template = Single;
+            break;
+        case 'Tag':
+            template = Single;
+            break;
+        default: 
+            template = Single;
+    }
+    return template;
+}
+const Template = resolveContentTemplate(node)
+
+---
+
+<Layout {meta}>
+  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
+    <Template node={node}></Template>
+  </section>
+</Layout>
