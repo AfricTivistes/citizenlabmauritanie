@@ -4,6 +4,12 @@
     "slogan": "Votre plateforme d’information ",
     "slogan1": "citoyenne ",
     "slogan2": "en Mauritanie",
+    "info-projet": "Promouvoir la participation citoyenne et la démocratie participative. ainsi que d’impulser des nouvelles dynamiques par l’utilisation de la technologie citoyenne (civic tech)",
+    "more":"Lire plus"
+  },
+  
+  "navigation":{
+    "citizenLab": "CitizenLab",
     "a-propos": "À propos",
     "initiative": "Initiatives",
     "equipe": "Équipe",
@@ -13,10 +19,6 @@
     "publications": "Publications",
     "mediatheque": "Médiathéque",
     "contact": "Contacts",
-    "telecharger": "Télécharger",
-    "info-projet": "Promouvoir la participation citoyenne et la démocratie participative. ainsi que d’impulser des nouvelles dynamiques par l’utilisation de la technologie citoyenne (civic tech)",
-    "more":"Lire plus"
-    
-
+    "telecharger": "Télécharger"
   }
 }

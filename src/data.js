@@ -1,53 +1,53 @@
 import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
-import { t } from "i18next";
+import { t } from 'i18next';
 
 export const headerData = {
   links: [
     {
-      text: 'CitizenLab',
+      text: "navigation.citizenLab",
       links: [
         {
-          text: t("site.a-propos"),
+          text: "navigation.a-propos",
           href: getPermalink('/landing/saas'),
         },
         {
-          text: t("site.initiative"),
+          text: "navigation.initiative",
           href: getPermalink('/landing/startup'),
         },
         {
-          text: t("site.equipe"),
+          text: "navigation.equipe",
           href: getPermalink('/landing/mobile-app'),
         },
       ],
     },
     {
-      text: t("site.actualites"),
+      text: "navigation.actualites",
       href: getBlogPermalink(),
     },
     {
-      text: t("site.droit-liberte"),
+      text: "navigation.droit-liberte",
       href: '#',
     },
     {
-      text: t("site.ressources"),
+      text: "navigation.ressources",
       links: [
         {
-          text: t("site.publications"),
+          text: "navigation.publications",
           href: getPermalink('/terms'),
         },
         {
-          text: t("site.mediatheque"),
+          text: "navigation.mediatheque",
           href: getPermalink('/privacy'),
         },
       ],
     },
     {
-      text: t("site.contact"),
+      text: "navigation.contact",
       href: '#',
     },
   ],
   actions: [
-    { type: 'button', text: t("site.telecharger"), href: 'https://citizenlabmauritanie.netlify.app' }
+    { type: 'button', text: "navigation.telecharger", href: 'https://citizenlabmauritanie.netlify.app' }
   ],
 };
 
