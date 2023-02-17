@@ -1,5 +1,5 @@
 import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
-import { t } from 'i18next';
+
 
 export const headerData = {
   links: [
