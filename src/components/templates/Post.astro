@@ -1,0 +1,9 @@
+---
+import SinglePost from "~/components/blog/wpPost.astro";
+import ToBlogLink from "~/components/blog/ToBlogLink.astro";
+const { node, image, url } = Astro.props;
+const post = node;
+--- 
+
+<SinglePost post={{ ...post, image: image }} url={url} />
+<ToBlogLink />

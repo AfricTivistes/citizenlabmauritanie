@@ -1,3 +1,38 @@
+export async function newsPagePostsQuery() {
+  const response = await fetch(import.meta.env.WORDPRESS_API_URL, {
+    method: 'post',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      query: `{
+                posts {
+                  nodes {
+                    date
+                    uri
+                    title
+                    commentCount
+                    excerpt
+                    categories {
+                      nodes {
+                        name
+                        uri
+                      }
+                    }
+                    featuredImage {
+                      node {
+                        mediaItemUrl
+                        altText
+                      }
+                    }
+                  }
+                }
+              }
+            `
+    })
+  });
+  const { data } = await response.json();
+  return data.posts.nodes;
+}
+
 export async function getNodeByURI(uri) {
   const response = await fetch(import.meta.env.WORDPRESS_API_URL, {
     method: 'post',
@@ -8,6 +43,35 @@ export async function getNodeByURI(uri) {
                   __typename
                   isContentNode
                   isTermNode
+                  ... on Post {
+                    id
+                    title
+                    date
+                    uri
+                    excerpt
+                    content
+                    categories {
+                      nodes {
+                        name
+                        uri
+                      }
+                    }
+                    terms {
+                      nodes {
+                        name
+                        slug
+                      }
+                    }
+                    featuredImage {
+                      node {
+                        mediaItemUrl
+                        altText
+                      }
+                    }
+                    language {
+                      slug
+                    }
+                  }
                   ... on Page {
                     id
                     title
@@ -36,6 +100,11 @@ export async function getAllUris() {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       query: `query GetAllUris {
+            posts(first: 100) {
+              nodes {
+                uri
+              }
+            }
             pages {
               nodes {
                 uri
@@ -61,5 +130,4 @@ export async function getAllUris() {
       }
     })
   return uris;
-
 }

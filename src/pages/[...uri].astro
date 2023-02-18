@@ -1,29 +1,51 @@
 ---
 export const prerender = true;
-import { SITE } from '~/config.mjs';
+import { BLOG } from "~/config.mjs";
 import Layout from '~/layouts/WPLayout.astro';
 import { getNodeByURI, getAllUris } from "../utils/api";
 import Single from "../components/templates/Single.astro";
+import Post from "../components/templates/Post.astro";
+import { getCanonical, getPermalink } from "~/utils/permalinks";
+import { findImage } from "~/utils/images";
 import i18next from "i18next";
 const uri = `/${Astro.params.uri}/`;
 const data = await getNodeByURI(uri);
 const node = data.nodeByUri;
 
-const meta = {
-  title: node.title,
-  description: SITE.description,
-  ogType: 'blog'
-};
-
 export async function getStaticPaths(){
   return await getAllUris();
 }
+
+function resolveOgType(node){ 
+    let type;
+    switch(node.__typename){
+        case 'Post':
+            type = "article";
+            break;
+        case 'Page':
+            type = "page";
+            break;
+        default: 
+            type = Single;
+    }
+    return type;
+}
+
+const url = getCanonical(getPermalink(node.permalink, "post"));
+const meta = {
+    title: node.title,
+    description: node.description,
+    canonical: node.canonical || url,
+    image: await findImage(node.featuredImage?.node?.mediaItemUrl),
+    noindex: BLOG?.post?.noindex,
+    ogType: resolveOgType(node),
+};
 
 function resolveContentTemplate(node){ 
     let template;
     switch(node.__typename){
         case 'Post':
-            template = Single;
+            template = Post;
             break;
         case 'Page':
             template = Single;
@@ -45,7 +67,5 @@ i18next.changeLanguage(node.language.slug);
 ---
 
 <Layout {meta}>
-  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
-    <Template node={node}></Template>
-  </section>
+    <Template node={node} image={meta.image}></Template>
 </Layout>

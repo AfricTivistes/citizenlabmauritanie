@@ -3,6 +3,7 @@ export interface Post {
   slug: string;
 
   publishDate: Date;
+  date: string;
   title: string;
   description?: string;
 
@@ -15,6 +16,7 @@ export interface Post {
 
   excerpt?: string;
   category?: string;
+  terms?: unknown;
   tags?: Array<string>;
   author?: string;
 
