@@ -4,6 +4,7 @@ import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/WPLayout.astro';
 import { getNodeByURI, getAllUris } from "../utils/api";
 import Single from "../components/templates/Single.astro";
+import i18next from "i18next";
 const uri = `/${Astro.params.uri}/`;
 const data = await getNodeByURI(uri);
 const node = data.nodeByUri;
@@ -40,6 +41,7 @@ function resolveContentTemplate(node){
 }
 const Template = resolveContentTemplate(node)
 
+i18next.changeLanguage(node.language.slug);
 ---
 
 <Layout {meta}>

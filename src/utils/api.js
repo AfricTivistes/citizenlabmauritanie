@@ -14,6 +14,9 @@ export async function getNodeByURI(uri) {
                     uri
                     date
                     content
+                    language {
+                      slug
+                    }
                   }
                 }
               }
