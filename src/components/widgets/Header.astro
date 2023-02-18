@@ -5,8 +5,9 @@ import ToggleTheme from '~/components/common/ToggleTheme.astro';
 import ToggleMenu from '~/components/common/ToggleMenu.astro';
 
 import { getHomePermalink, getAsset } from '~/utils/permalinks';
-import { localizePath } from "astro-i18next";
+import { localizePath } from 'astro-i18next';
 import { t } from 'i18next';
+import { LanguageSelector } from 'astro-i18next/components';
 
 interface Link {
   text?: string;
@@ -96,6 +97,13 @@ const {
             </li>
           ))
         }
+        <li>
+          <a
+            class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+          >
+            <LanguageSelector showFlag={true} />
+          </a>
+        </li>
       </ul>
     </nav>
     <div class:list={[{ 'ml-auto': position === 'left' }, 'md:self-center flex items-center md:mb-0']}>
