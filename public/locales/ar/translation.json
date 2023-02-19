@@ -64,6 +64,18 @@
         "description5": "D'études et de rapports sur les questions pertinentes liées à la démocratie participative en Mauritanie, qui est disponible et téléchargeable.",
         "title6": "Déployer une stratégie ",
         "description6": "De communication sur l'engagement citoyen et la co-construction sur Internet et sur les médias classiques, notamment à travers l'organisation de 4 plateaux télé et 10 émissions radios."
-      }
+      },
+  "projectStep":{
+    "title": "Africtivistes Citizen Lab Mauritanie en trois etapes",
+    "items":{
+      "date1": "Decembre 2022: <span class='font-medium'>Appel a candidatures</span>",
+      "step1": "Appel à candidatures ouvert à tous les mauritaniens pour recruter l'équipe projet de CitizenLab Mauritanie",
+      "date2": "Janvier 2023: <span class='font-medium'>Formation sur la citoyenneté et la campagne digitale</span>",
+      "step2": "Deux formateurs de AfricTivistes ont fait le déplacement à Nouakchott. Les 4 jours de formation ont tourné autour de l’Engagement citoyen, la Participation citoyenne et la Campagne digitale pour outiller ces acteurs engagés et répondre aux défis liés à la consolidation de la démocratie dans le pays",
+      "date3":"Février 2023: <span class='font-medium'>Formation sur la production de contenus</span>",
+      "step3": "Six formateurs, membres de AfricTivistes, ont fait le déplacement cette fois-ci pour former et outiller dix-sept jeunes mauritaniens sur les techniques de collecte, de production et de vérification de contenus médias. Il ont été également préparés à la prise en main de la plateforme dédiée au projet et qui va contenir des réflexions et idées sur la citoyenneté et le renforcement de la démocratie",
+      "date4": "20 Février 2023: <span class='font-medium'>Séminaire de lancement</span>"
+    }
+  }
   }
 }
