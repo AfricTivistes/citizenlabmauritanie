@@ -84,6 +84,11 @@ const {
         {content && <Fragment set:html={content} />}
       </div>
       <div>
+        <Fragment slot="image">
+          <iframe width="560" height="428" src="https://www.youtube.com/embed/Hd0cbKcXCCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:100%"></iframe>
+        </Fragment>
+      </div>
+      <!-- <div>
         {
           image && (
             <div class="relative m-auto max-w-5xl">
@@ -104,7 +109,7 @@ const {
             </div>
           )
         }
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
