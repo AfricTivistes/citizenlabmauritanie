@@ -78,5 +78,30 @@
       "step3": "Formation sur la collecte, la production et la vérification de contenus médiatiques, ainsi que sur l'utilisation de la plateforme du projet dédié à la citoyenneté et au renforcement de la démocratie.",
       "date4": "20 Février 2023: <span class='font-medium'>Séminaire de lancement</span>"
     }
+  },
+  "citoyennete":{
+    "title": "Citoyenneté",
+    "description": "Agissons pour un changement positif en Mauritanie avec AfricTivistes CITIZENLab",
+    "items":{
+      "title1": "Droits et libertés",
+      "description1": "Les droits et libertés sont des éléments clés de la citoyenneté, et incluent le droit à la vie, la liberté de pensée, d'expression, de religion, et l'égalité devant la loi",
+      "title2":"Participation politique",
+      "description2": "La participation politique est un aspect important de la citoyenneté, et comprend le droit de vote, le droit de se présenter aux élections, le droit de pétition et le droit de manifester",
+      "title3":"Engagement civique",
+      "description3": "L'engagement civique inclut les actions entreprises pour améliorer la communauté, telles que le bénévolat, le service communautaire, la participation à des groupes de quartier et la prise de responsabilité pour améliorer la qualité de vie dans son environnement",
+      "title4": "Éducation civique",
+      "description4": "L'éducation civique est une composante essentielle de la citoyenneté, qui vise à donner aux citoyens les connaissances, les compétences et les valeurs nécessaires pour participer efficacement à la vie politique et civique",
+      "title5": "Responsabilité",
+      "description5": "Les citoyens ont des responsabilités envers leur communauté, notamment respecter les lois, voter, payer des impôts, respecter les droits des autres, être tolérants, protéger l'environnement et participer à la vie communautaire",
+      "title6": "Diversité",
+      "description6": "La diversité est une réalité de la plupart des sociétés, et la citoyenneté implique de respecter les différences culturelles, religieuses et ethniques des autres, ainsi que de promouvoir l'inclusion et l'égalité",
+      "title7": "Dialogue et délibération",
+      "description7": "Le dialogue et la délibération sont des éléments clés de la citoyenneté, car ils permettent aux citoyens de discuter de questions importantes, de partager des opinions et de trouver des solutions ensemble",
+      "title8": "Responsabilisation",
+      "description8": "La responsabilisation est un élément important de la citoyenneté, car elle implique que les gouvernements et les dirigeants soient responsables de leurs actions, rendent des comptes à la population et respectent les droits des citoyens",
+      "title9": "Participation à la vie économique",
+      "description9": "La participation à la vie économique est un élément important de la citoyenneté, car elle implique la participation à l'économie, la compréhension de son fonctionnement et de ses impacts, ainsi que la promotion de l'équité économique"
+
+    }
   }
 }

@@ -1,24 +1,24 @@
 ---
-import { t, changeLanguage } from "i18next";
-import { SITE } from "~/config.mjs";
-import Layout from "~/layouts/PageLayout.astro";
-import Hero from "~/components/widgets/Hero.astro";
-import Note from "~/components/widgets/Note.astro";
-import Features from "~/components/widgets/Features.astro";
-import Features2 from "~/components/widgets/Features2.astro";
-import Steps from "~/components/widgets/Steps.astro";
-import Content from "~/components/widgets/Content.astro";
-import LatestPosts from "~/components/blog/LatestPosts.astro";
-import FAQs from "~/components/widgets/FAQs.astro";
-import Stats from "~/components/widgets/Stats.astro";
-import CallToAction from "~/components/widgets/CallToAction.astro";
+import { t, changeLanguage } from 'i18next';
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import LatestPosts from '~/components/blog/LatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
-changeLanguage("fr");
+changeLanguage('fr');
 
 const meta = {
-    title: SITE.title,
-    description: SITE.description,
-    dontUseTitleTemplate: true,
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
 };
 ---
 
@@ -191,62 +191,53 @@ const meta = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    highlight="Components"
+    title={t('citoyennete.title')}
+    subtitle={t('citoyennete.description')}
+    highlight="Démocratie, État de droit et citoyenneté"
     items={[
       {
-        title: 'Headers',
-        description:
-          'In general, Headers contain information that makes it easier for visitors to interact with the website.',
+        title: t('citoyennete.items.title1'),
+        description: t('citoyennete.items.description1'),
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Heros',
-        description:
-          'If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.',
+        title: t('citoyennete.items.title2'),
+        description: t('citoyennete.items.description3'),
         icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Features',
-        description:
-          'Display your product in action and how the Features actually create a solution for your target customer.',
+        title: t('citoyennete.items.title3'),
+        description: t('citoyennete.items.description3'),
         icon: 'flat-color-icons:todo-list',
       },
       {
-        title: 'Content',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        title: t('citoyennete.items.title4'),
+        description: t('citoyennete.items.description4'),
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Call-to-Action',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        title: t('citoyennete.items.title5'),
+        description: t('citoyennete.items.description5'),
         icon: 'flat-color-icons:advertising',
       },
       {
-        title: 'Pricing',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        title: t('citoyennete.items.title6'),
+        description: t('citoyennete.items.description6'),
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Testimonial',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        title: t('citoyennete.items.title7'),
+        description: t('citoyennete.items.description7'),
         icon: 'flat-color-icons:voice-presentation',
       },
       {
-        title: 'Contact',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        title: t('citoyennete.items.title8'),
+        description: t('citoyennete.items.description8'),
         icon: 'flat-color-icons:business-contact',
       },
       {
-        title: 'Footers',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        title: t('citoyennete.items.title9'),
+        description: t('citoyennete.items.description9'),
         icon: 'icon-park:page-template',
       },
     ]}
