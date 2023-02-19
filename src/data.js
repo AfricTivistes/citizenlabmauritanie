@@ -25,19 +25,34 @@ export const headerData = {
       href: getBlogPermalink(),
     },
     {
-      text: "navigation.droit-liberte",
-      href: '#',
+      text: "navigation.citoyennete",
+      links: [
+        {
+          text: "navigation.interview",
+          href: '#',
+        }
+      ],
     },
     {
       text: "navigation.ressources",
+      href: getBlogPermalink(),
       links: [
         {
           text: "navigation.publications",
-          href: getPermalink('/terms'),
+          href: '#',
         },
         {
           text: "navigation.mediatheque",
-          href: getPermalink('/privacy'),
+          links: [
+            {
+              text: "navigation.podcast",
+              href: '#',
+            },
+            {
+              text: "navigation.video",
+              href: '#',
+            },
+          ],
         },
       ],
     },
