@@ -20,5 +20,20 @@
     "mediatheque": "Médiathéque",
     "contact": "Contacts",
     "telecharger": "Télécharger"
+  },
+  "faq":{
+    "q1": "Qu'est-ce que le projet AfricTivistes CitizenLab Mauritanie ?",
+    "r1":"AfricTivistes CitizenLab Mauritanie est une fabrique citoyenne qui a pour objectif d'appuyer, d'accompagner et d'outiller les acteurs de la société civile mauritanienne dans la consolidation de la démocratie en Mauritanie",
+    "q2": "Pourquoi est-il important de soutenir la participation citoyenne en Mauritanie ?",
+    "r2":"La Mauritanie est confrontée à un déficit d'engagement et d'implication des populations à la vie politique du pays, ce qui nuit à la démocratie et à la transparence. AfricTivistes CitizenLab Mauritanie vise à remédier à ce problème en encourageant les jeunes à participer activement à la vie politique de leur pays",
+    "q3": "Comment AfricTivistes CitizenLab Mauritanie encourage-t-il la participation citoyenne ?",
+    "r3":"AfricTivistes CitizenLab Mauritanie encourage la participation citoyenne en Mauritanie en proposant des formations, des outils et des accompagnements à l'innovation et à la co-création. Il s'appuie également sur des projets numériques dédiés à la démocratie pour favoriser l'engagement des jeunes",
+    "q4": "Qu'est-ce que la Civic Tech ?",
+    "r4":"La Civic Tech est un terme qui désigne les technologies et les démarches qui favorisent et renforcent le rôle joué par les citoyens dans la consolidation des débats publics. Ils sont souvent utilisées par les jeunes pour s'engager politiquement et participer à la vie de leur pays",
+    "q5": "Comment les Civic Tech ont-elles permis des mobilisations importantes en Afrique ?",
+    "r5":"Les Civic Tech ont permis des mobilisations importantes en Afrique en donnant une voix aux citoyens et en permettant des échanges d'informations en temps réel. Elles ont notamment été utilisées lors des campagnes électorales et pour organiser des manifestations et des protestations",
+    "q6": "Comment le projet AfricTivistes CitizenLab Mauritanie s'inscrit-il dans l'histoire politique de la Mauritanie ?",
+    "r6":"AfricTivistes CitizenLab Mauritanie s'inscrit dans la continuité des efforts de démocratisation en Mauritanie. Il vient compléter les actions déjà entreprises pour renforcer la transparence, la participation citoyenne et la démocratie dans le pays"
   }
+  
 }
