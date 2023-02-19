@@ -33,6 +33,35 @@ export async function newsPagePostsQuery(lang) {
   return data.posts.nodes;
 }
 
+export async function findLatestPosts(lang) {
+  const response = await fetch(import.meta.env.WORDPRESS_API_URL, {
+    method: 'post',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      query: `{
+                posts(first: 4 where: {language: ${lang}}) {
+                  nodes {
+                    date
+                    uri
+                    title
+                    commentCount
+                    excerpt
+                    featuredImage {
+                      node {
+                        mediaItemUrl
+                        altText
+                      }
+                    }
+                  }
+                }
+              }
+            `
+    })
+  });
+  const { data } = await response.json();
+  return data.posts.nodes;
+}
+
 export async function getNodeByURI(uri) {
   const response = await fetch(import.meta.env.WORDPRESS_API_URL, {
     method: 'post',
