@@ -1,5 +1,6 @@
 {
   "site": {
+    "langue": "FR",
     "title": "Africtivistes Citizen Lab Mauritanie — Votre plateforme d’information citoyenne",
     "slogan": "Votre plateforme d’information ",
     "slogan1": "citoyenne ",
@@ -34,6 +35,9 @@
     "r5":"Les Civic Tech ont permis des mobilisations importantes en Afrique en donnant une voix aux citoyens et en permettant des échanges d'informations en temps réel. Elles ont notamment été utilisées lors des campagnes électorales et pour organiser des manifestations et des protestations",
     "q6": "Comment le projet AfricTivistes CitizenLab Mauritanie s'inscrit-il dans l'histoire politique de la Mauritanie ?",
     "r6":"AfricTivistes CitizenLab Mauritanie s'inscrit dans la continuité des efforts de démocratisation en Mauritanie. Il vient compléter les actions déjà entreprises pour renforcer la transparence, la participation citoyenne et la démocratie dans le pays"
+  },
+  "headline":{
+    "actualite": "L'actualité"
   }
   
 }

@@ -1,10 +1,10 @@
-export async function newsPagePostsQuery() {
+export async function newsPagePostsQuery(lang) {
   const response = await fetch(import.meta.env.WORDPRESS_API_URL, {
     method: 'post',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       query: `{
-                posts {
+                posts(where: {language: ${lang}}) {
                   nodes {
                     date
                     uri

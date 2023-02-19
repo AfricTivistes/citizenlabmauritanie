@@ -18,6 +18,7 @@ const { post } = Astro.props;
 const image = await findImage(post.featuredImage?.node?.mediaItemUrl);
 const datePost = Date.parse(post.date);
 const link = !BLOG?.post?.disabled ? getPermalink(post.uri, 'post') : '';
+
 ---
 
 <article class={`max-w-md mx-auto md:max-w-none grid gap-6 md:gap-8 ${image ? 'md:grid-cols-2' : ''}`}>

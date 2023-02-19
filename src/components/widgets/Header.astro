@@ -78,7 +78,7 @@ const {
                       <li>
                         <a
                           class="first:rounded-t last:rounded-b md:hover:bg-gray-200 dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap"
-                          href={href2}
+                          href={localizePath(href2)}
                         >
                           {t(`${text2}`)}
                         </a>
@@ -89,7 +89,7 @@ const {
               ) : (
                 <a
                   class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-                  href={href}
+                  href={localizePath(href)}
                 >
                   {t(`${text}`)}
                 </a>
@@ -130,7 +130,7 @@ const {
                     'btn ml-2 py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm',
                     { 'btn-ghost': type === 'ghost', 'btn-primary': type === 'primary' },
                   ]}
-                  href={href}
+                  href={localizePath(href)}
                 >
                   <Fragment set:html={t(`${text}`)} />
                 </a>

@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import { SITE, ACTUALITUES } from "~/config.mjs";
 import Layout from "~/layouts/PageLayout.astro";
 import BlogList from "~/components/blog/wpList.astro";
@@ -13,7 +13,7 @@ changeLanguage("fr");
 export async function getStaticPaths({ paginate }) {
     if (ACTUALITUES?.disabled || ACTUALITUES?.list?.disabled)
         return [];
-    return paginate(await newsPagePostsQuery(), {
+    return paginate(await newsPagePostsQuery(t("site.langue")), {
         params: { actualitues: ACTUALITUES_BASE || undefined },
         pageSize: ACTUALITUES.postsPerPage,
     });
@@ -33,7 +33,7 @@ const meta = {
     <Headline
       subtitle="A statically generated blog example with news, tutorials, resources and other interesting content related to AstroWind"
     >
-      L'actualité
+      {t("headline.actualite")}
     </Headline>
     <BlogList posts={page.data} />
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />

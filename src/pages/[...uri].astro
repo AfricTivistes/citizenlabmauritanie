@@ -1,36 +1,36 @@
 ---
 export const prerender = true;
 import { BLOG } from "~/config.mjs";
-import Layout from '~/layouts/WPLayout.astro';
+import Layout from "~/layouts/WPLayout.astro";
 import { getNodeByURI, getAllUris } from "../utils/api";
 import Single from "../components/templates/Single.astro";
 import Post from "../components/templates/Post.astro";
 import { getCanonical, getPermalink } from "~/utils/permalinks";
 import { findImage } from "~/utils/images";
-import i18next from "i18next";
+import { changeLanguage } from "i18next";
+
+changeLanguage("fr");
+
 const uri = `/${Astro.params.uri}/`;
 const data = await getNodeByURI(uri);
 const node = data.nodeByUri;
-
-export async function getStaticPaths(){
-  return await getAllUris();
+export async function getStaticPaths() {
+    return await getAllUris();
 }
-
-function resolveOgType(node){ 
+function resolveOgType(node) {
     let type;
-    switch(node.__typename){
-        case 'Post':
+    switch (node.__typename) {
+        case "Post":
             type = "article";
             break;
-        case 'Page':
+        case "Page":
             type = "page";
             break;
-        default: 
+        default:
             type = Single;
     }
     return type;
 }
-
 const url = getCanonical(getPermalink(node.permalink, "post"));
 const meta = {
     title: node.title,
@@ -40,30 +40,27 @@ const meta = {
     noindex: BLOG?.post?.noindex,
     ogType: resolveOgType(node),
 };
-
-function resolveContentTemplate(node){ 
+function resolveContentTemplate(node) {
     let template;
-    switch(node.__typename){
-        case 'Post':
+    switch (node.__typename) {
+        case "Post":
             template = Post;
             break;
-        case 'Page':
+        case "Page":
             template = Single;
             break;
-        case 'Category':
+        case "Category":
             template = Single;
             break;
-        case 'Tag':
+        case "Tag":
             template = Single;
             break;
-        default: 
+        default:
             template = Single;
     }
     return template;
 }
-const Template = resolveContentTemplate(node)
-
-i18next.changeLanguage(node.language.slug);
+const Template = resolveContentTemplate(node);
 ---
 
 <Layout {meta}>

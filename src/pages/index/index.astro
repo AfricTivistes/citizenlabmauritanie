@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import { SITE } from "~/config.mjs";
 import Layout from "~/layouts/PageLayout.astro";
 import Hero from "~/components/widgets/Hero.astro";
@@ -13,7 +13,7 @@ import FAQs from "~/components/widgets/FAQs.astro";
 import Stats from "~/components/widgets/Stats.astro";
 import CallToAction from "~/components/widgets/CallToAction.astro";
 
-changeLanguage("ar");
+changeLanguage("fr");
 
 const meta = {
     title: SITE.title,
@@ -26,22 +26,21 @@ const meta = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
-    callToAction2={{ text: 'Learn more', href: '#features' }}
+    callToAction={{
+      text: t('navigation.telecharger'),
+      href: 'https://github.com/onwidget/astrowind',
+      icon: 'tabler:download',
+    }}
+    callToAction2={{ text: t('site.more'), href: '#features' }}
     image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Votre <span class="hidden lg:inline"></span>plateforme <br class="2xl:hidden"/> d’information</span>
-      <span class="text-accent dark:text-white highlight"> citoyenne</span> en Mauritanie
+      {t('site.slogan')}
+      <span class="text-accent dark:text-white highlight"> {t('site.slogan1')}</span>
+      {t('site.slogan2')}
     </Fragment>
-
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 2.0 +
-        Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-green-600">AstroWind: Production-ready.</span> Suitable for Startups,
-      Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.
+      {t('site.info-projet')}
     </Fragment>
   </Hero>
 
@@ -281,42 +280,43 @@ const meta = {
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar."
+    title="Foire Aux Questions"
+    subtitle="Le FAQ sur le projet AfricTivistes CitizenLab Mauritanie répond à des questions sur les objectifs, les activités, le public cible, le rôle des citoyens et le financement du projet"
     highlight="FAQs"
     items={[
       [
         {
-          question: 'What do I need to start?',
+          question: "Qu'est-ce que le projet AfricTivistes CitizenLab Mauritanie ?",
           answer:
-            'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+            "AfricTivistes CitizenLab Mauritanie est une fabrique citoyenne qui a pour objectif d'appuyer, d'accompagner et d'outiller les acteurs de la société civile mauritanienne dans la consolidation de la démocratie en Mauritanie.",
         },
         {
-          question: 'How to install the Astro + Tailwind CSS template?',
+          question: 'Pourquoi est-il important de soutenir la participation citoyenne en Mauritanie ?',
           answer:
-            "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.",
+            "La Mauritanie est confrontée à un déficit d'engagement et d'implication des populations à la vie politique du pays, ce qui nuit à la démocratie et à la transparence. AfricTivistes CitizenLab Mauritanie vise à remédier à ce problème en encourageant les jeunes à participer activement à la vie politique de leur pays.",
         },
         {
-          question: "What's something that you don't understand?",
+          question: 'Comment AfricTivistes CitizenLab Mauritanie encourage-t-il la participation citoyenne ?',
           answer:
-            "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+            "AfricTivistes CitizenLab Mauritanie encourage la participation citoyenne en Mauritanie en proposant des formations, des outils et des accompagnements à l'innovation et à la co-création. Il s'appuie également sur des projets numériques dédiés à la démocratie pour favoriser l'engagement des jeunes.",
         },
       ],
       [
         {
-          question: "What's an example of when you changed your mind?",
+          question: "Qu'est-ce que la Civic Tech ?",
           answer:
-            "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+            "La Civic Tech est un terme qui désigne les technologies et les démarches qui favorisent et renforcent le rôle joué par les citoyens dans la consolidation des débats publics. Ils sont souvent utilisées par les jeunes pour s'engager politiquement et participer à la vie de leur pays.",
         },
         {
-          question: 'What is something that you would like to try again?',
+          question: 'Comment les Civic Tech ont-elles permis des mobilisations importantes en Afrique ?',
           answer:
-            "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+            "Les Civic Tech ont permis des mobilisations importantes en Afrique en donnant une voix aux citoyens et en permettant des échanges d'informations en temps réel. Elles ont notamment été utilisées lors des campagnes électorales et pour organiser des manifestations et des protestations.",
         },
         {
-          question: 'If you could only ask one question to each person you meet, what would that question be?',
+          question:
+            "Comment le projet AfricTivistes CitizenLab Mauritanie s'inscrit-il dans l'histoire politique de la Mauritanie ?",
           answer:
-            "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+            "AfricTivistes CitizenLab Mauritanie s'inscrit dans la continuité des efforts de démocratisation en Mauritanie. Il vient compléter les actions déjà entreprises pour renforcer la transparence, la participation citoyenne et la démocratie dans le pays.",
         },
       ],
     ]}
