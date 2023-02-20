@@ -1,5 +1,8 @@
 import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 import africtivistesSVG from './assets/images/africtivistes-logo.svg';
+import { t, changeLanguage } from "i18next";
+
+changeLanguage('fr');
 
 export const headerData = {
   links: [
@@ -8,15 +11,15 @@ export const headerData = {
       links: [
         {
           text: "navigation.a-propos",
-          href: getPermalink('/landing/saas'),
+          href: getPermalink(t("navigation.a-propos-link")),
         },
         {
           text: "navigation.initiative",
-          href: getPermalink('/landing/startup'),
+          href: getPermalink(t("navigation.initiative-link")),
         },
         {
           text: "navigation.equipe",
-          href: getPermalink('/landing/mobile-app'),
+          href: '#',
         },
       ],
     },
@@ -58,7 +61,7 @@ export const headerData = {
     },
     {
       text: "navigation.contact",
-      href: '#',
+      href: getPermalink(t("navigation.contact-link")),
     },
   ],
   actions: [
@@ -80,14 +83,14 @@ export const footerData = {
     {
       title: 'navigation.actualites',
       links: [
-        { text: "navigation.actualites", href: getBlogPermalink() },
+        { text: "navigation.portrait", href: getBlogPermalink() },
+        { text: "navigation.reportage", href: getBlogPermalink() },
+        { text: "navigation.debat", href: getBlogPermalink() },
+        { text: "navigation.decouverte", href: getBlogPermalink() },
       ],
     },
     {
       title: "navigation.citoyennete",
-      links: [
-        { text: "navigation.interview", href: '#' },
-      ],
     },
     {
       title: "navigation.ressources",

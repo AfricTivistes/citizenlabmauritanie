@@ -13,7 +13,9 @@
   "navigation": {
     "citizenLab": "CitizenLab",
     "a-propos": "À propos",
+    "a-propos-link": "/a-propos",
     "initiative": "Initiatives",
+    "initiative-link": "/initiatives",
     "equipe": "Équipe",
     "actualites": "Actualités",
     "portrait": "Portrait",
@@ -28,6 +30,7 @@
     "podcast": "Podcast",
     "video": "Vidéos",
     "contact": "Contacts",
+    "contact-link": "/contacts",
     "telecharger": "Télécharger"
   },
   "faq": {
@@ -81,6 +84,7 @@
     }
   },
   "citoyennete": {
+    "highlight": "Démocratie, État de droit et citoyenneté",
     "title": "Citoyenneté",
     "description": "Agissons pour un changement positif en Mauritanie avec AfricTivistes CITIZENLab",
     "items": {
@@ -108,5 +112,11 @@
     "name": "Découvrez les dernières actualités!",
     "allPost": "Voir tous les articles",
     "description": "Cette section revient sur l’actualité du projet et sera une vitrine sur tout ce qui se fait en matière d’engagement et de participation citoyenne en Mauritanie."
+  },
+  "stats":{
+    "application": "Application mobile inclusif",
+    "langues": "Langues locales",
+    "jeunes": "Jeunes engagés",
+    "internautes": "Internautes"
   }
 }
