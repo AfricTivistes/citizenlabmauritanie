@@ -69,47 +69,34 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'navigation.citizenLab',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'navigation.a-propos', href: '#' },
+        { text: 'navigation.initiative', href: '#' },
+        { text: 'navigation.equipe', href: '#' },
+        { text: 'navigation.contact', href: '#' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'navigation.actualites',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: "navigation.actualites", href: getBlogPermalink() },
       ],
     },
     {
-      title: 'Support',
+      title: "navigation.citoyennete",
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: "navigation.interview", href: '#' },
       ],
     },
     {
-      title: 'Company',
+      title: "navigation.ressources",
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: "navigation.publications", href: '#' },
+        { text: "navigation.mediatheque", href: '#' },
+        { text: "navigation.podcast", href: '#' },
+        { text: "navigation.video", href: '#' },
+
       ],
     },
   ],
