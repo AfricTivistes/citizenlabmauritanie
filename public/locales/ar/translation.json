@@ -6,9 +6,11 @@
     "slogan1": " مواطنة",
     "slogan2": " في موريتانيا  ",
     "info-projet": "تعزيز مشاركة المواطنين والديمقراطية التشاركية. وكذلك لتحفيز الديناميكيات الجديدة من خلال استخدام تكنولوجيا ",
-    "more":"اقرأ أكثر"
+    "more": "اقرأ أكثر",
+    "info-seminaire": "ندوة إطلاق",
+    "link-seminaire": "/ar/ندوة-إطلاق-africtivistes-citizenlab-موريتانيا/"
   },
-  "navigation":{
+  "navigation": {
     "citizenLab": "CitizenLab",
     "a-propos": "في ما يخص",
     "initiative": "المبادرات",
@@ -28,54 +30,83 @@
     "contact": "جهات الاتصال",
     "telecharger": "تحميل"
   },
-  "faq":{
+  "faq": {
     "name": "طرح أسئلة",
     "description": "Le FAQ sur le projet AfricTivistes CitizenLab Mauritanie répond à des questions sur les objectifs, les activités, le public cible, le rôle des citoyens et le financement du projet",
     "q1": "ما هو مشروع AfricTivistes CitizenLab موريتانيا؟",
-    "r1":"AfricanTivistes CitizenLab موريتانيا هو مصنع للمواطنين هدفه دعم ومواكبة الجهات الفاعلة في المجتمع المدني الموريتاني في توطيد الديمقراطية في موريتانيا",
+    "r1": "AfricanTivistes CitizenLab موريتانيا هو مصنع للمواطنين هدفه دعم ومواكبة الجهات الفاعلة في المجتمع المدني الموريتاني في توطيد الديمقراطية في موريتانيا",
     "q2": "ما أهمية دعم مشاركة المواطنين في موريتانيا؟",
-    "r2":"تواجه موريتانيا قلة التزام وانخراط السكان في الحياة السياسية للبلاد ، مما يقوض الديمقراطية والشفافية. يهدف موقع AfricTivistes CitizenLab الموريتاني إلى معالجة هذه المشكلة من خلال تشجيع الشباب على المشاركة بنشاط في الحياة السياسية لبلدهم",
-    "q3":"كيف يشجع AfricTivistes CitizenLab موريتانيا مشاركة المواطنين؟",
-    "r3":"إن برنامج AfricTivistes CitizenLab موريتانيا يشجع مشاركة المواطنين في موريتانيا من خلال تقديم التدريب والتقنيات والدعم الإبتكار والإبداع المشترك. كما أنها تعتمد على المشاريع الرقمية المخصصة للديمقراطية لتعزيز مشاركة الشباب",
+    "r2": "تواجه موريتانيا قلة التزام وانخراط السكان في الحياة السياسية للبلاد ، مما يقوض الديمقراطية والشفافية. يهدف موقع AfricTivistes CitizenLab الموريتاني إلى معالجة هذه المشكلة من خلال تشجيع الشباب على المشاركة بنشاط في الحياة السياسية لبلدهم",
+    "q3": "كيف يشجع AfricTivistes CitizenLab موريتانيا مشاركة المواطنين؟",
+    "r3": "إن برنامج AfricTivistes CitizenLab موريتانيا يشجع مشاركة المواطنين في موريتانيا من خلال تقديم التدريب والتقنيات والدعم الإبتكار والإبداع المشترك. كما أنها تعتمد على المشاريع الرقمية المخصصة للديمقراطية لتعزيز مشاركة الشباب",
     "q4": "؟Civic Tech ما هي ",
-    "r4":"Civic Tech هو مصطلح يشير إلى التقنيات والأساليب التي تعزز التشاور وتقوي الدور الذي يلعبه المواطنون في تعزيز  العامة. غالبًا ما يستخدمهم الشباب للمشاركة السياسية والمشاركة في حياة بلدهم",
+    "r4": "Civic Tech هو مصطلح يشير إلى التقنيات والأساليب التي تعزز التشاور وتقوي الدور الذي يلعبه المواطنون في تعزيز  العامة. غالبًا ما يستخدمهم الشباب للمشاركة السياسية والمشاركة في حياة بلدهم",
     "q5": "كيف مكنت Civic Tech عمليات التعبئة الرئيسية في أفريقيا؟",
-    "r5":"أتاحت Civic Tech عمليات تعبئة كبيرة في إفريقيا من خلال منح المواطنين صوتًا وتمكين تبادل المعلومات في الوقت الفعلي. على وجه الخصوص ، تم استخدامها خلال الحملات الانتخابية وتنظيم المظاهرات والاحتجاجات",
+    "r5": "أتاحت Civic Tech عمليات تعبئة كبيرة في إفريقيا من خلال منح المواطنين صوتًا وتمكين تبادل المعلومات في الوقت الفعلي. على وجه الخصوص ، تم استخدامها خلال الحملات الانتخابية وتنظيم المظاهرات والاحتجاجات",
     "q6": "كيف يتناسب مشروع AfricTivistes CitizenLab الموريتاني مع التاريخ السياسي لموريتانيا؟",
-    "r6":"AfricTivistes CitizenLab موريتانيا هو جزء من استمرارية جهود التحول الديمقراطي في موريتانيا. وهو يكمل الإجراءات التي تم اتخاذها بالفعل لتعزيز الشفافية ومشاركة المواطنين والديمقراطية في البلاد"
+    "r6": "AfricTivistes CitizenLab موريتانيا هو جزء من استمرارية جهود التحول الديمقراطي في موريتانيا. وهو يكمل الإجراءات التي تم اتخاذها بالفعل لتعزيز الشفافية ومشاركة المواطنين والديمقراطية في البلاد"
   },
-  "headline":{
+  "headline": {
     "actualite": "أخبار"
   },
-  "heroObjectifs":{
+  "heroObjectifs": {
     "highlight": "AfricTivistes",
     "title": "Citizen Lab Mauritanie",
     "subtitle": "Ensemble pour une démocratie participative",
-    "items":{
-        "title1": "Renforcer la démocratie participative",
-        "description1": "En Mauritanie, en encourageant l'engagement citoyen et en favorisant la co-construction.",
-        "title2": "Créer un réseau citoyen",
-        "description2": "D'acteurs de changement en Mauritanie à travers la mise en place d'un Think Tank citoyen.",
-        "title3": "Fournir une plateforme",
-        "description3": "De contenu pour les membres du Think Tank citoyen afin de partager des informations et de lancer des débats sur les questions pertinentes liées à la démocratie participative.",
-        "title4": "Créer une application mobile",
-        "description4": "Exclusivement audio en 4 langues locales pour sensibiliser les citoyens sur les questions pertinentes liées à la démocratie participative.",
-        "title5": "Fournir une base de données",
-        "description5": "D'études et de rapports sur les questions pertinentes liées à la démocratie participative en Mauritanie, qui est disponible et téléchargeable.",
-        "title6": "Déployer une stratégie ",
-        "description6": "De communication sur l'engagement citoyen et la co-construction sur Internet et sur les médias classiques, notamment à travers l'organisation de 4 plateaux télé et 10 émissions radios."
-      },
-  "projectStep":{
+    "items": {
+      "title1": "Renforcer la démocratie participative",
+      "description1": "En Mauritanie, en encourageant l'engagement citoyen et en favorisant la co-construction.",
+      "title2": "Créer un réseau citoyen",
+      "description2": "D'acteurs de changement en Mauritanie à travers la mise en place d'un Think Tank citoyen.",
+      "title3": "Fournir une plateforme",
+      "description3": "De contenu pour les membres du Think Tank citoyen afin de partager des informations et de lancer des débats sur les questions pertinentes liées à la démocratie participative.",
+      "title4": "Créer une application mobile",
+      "description4": "Exclusivement audio en 4 langues locales pour sensibiliser les citoyens sur les questions pertinentes liées à la démocratie participative.",
+      "title5": "Fournir une base de données",
+      "description5": "D'études et de rapports sur les questions pertinentes liées à la démocratie participative en Mauritanie, qui est disponible et téléchargeable.",
+      "title6": "Déployer une stratégie ",
+      "description6": "De communication sur l'engagement citoyen et la co-construction sur Internet et sur les médias classiques, notamment à travers l'organisation de 4 plateaux télé et 10 émissions radios."
+    }
+  },
+  "projectStep": {
     "title": "Africtivistes Citizen Lab Mauritanie en trois etapes",
-    "items":{
+    "items": {
       "date1": "Decembre 2022: <span class='font-medium'>Appel a candidatures</span>",
       "step1": "Appel à candidatures ouvert à tous les mauritaniens pour recruter l'équipe projet de CitizenLab Mauritanie",
       "date2": "Janvier 2023: <span class='font-medium'>Formation sur la citoyenneté et la campagne digitale</span>",
       "step2": "Deux formateurs de AfricTivistes ont fait le déplacement à Nouakchott. Les 4 jours de formation ont tourné autour de l’Engagement citoyen, la Participation citoyenne et la Campagne digitale pour outiller ces acteurs engagés et répondre aux défis liés à la consolidation de la démocratie dans le pays",
-      "date3":"Février 2023: <span class='font-medium'>Formation sur la production de contenus</span>",
+      "date3": "Février 2023: <span class='font-medium'>Formation sur la production de contenus</span>",
       "step3": "Six formateurs, membres de AfricTivistes, ont fait le déplacement cette fois-ci pour former et outiller dix-sept jeunes mauritaniens sur les techniques de collecte, de production et de vérification de contenus médias. Il ont été également préparés à la prise en main de la plateforme dédiée au projet et qui va contenir des réflexions et idées sur la citoyenneté et le renforcement de la démocratie",
       "date4": "20 Février 2023: <span class='font-medium'>Séminaire de lancement</span>"
     }
-  }
+  },
+  "citoyennete": {
+    "title": "مواطنة",
+    "description": "Agissons pour un changement positif en Mauritanie avec AfricTivistes CITIZENLab",
+    "items": {
+      "title1": "الحقوق والحريات",
+      "description1": "Les droits et libertés sont des éléments clés de la citoyenneté, et incluent le droit à la vie, la liberté de pensée, d'expression, de religion, et l'égalité devant la loi",
+      "title2": "سياسة العضوية",
+      "description2": "La participation politique est un aspect important de la citoyenneté, et comprend le droit de vote, le droit de se présenter aux élections, le droit de pétition et le droit de manifester",
+      "title3": "المشاركة المدنية",
+      "description3": "L'engagement civique inclut les actions entreprises pour améliorer la communauté, telles que le bénévolat, le service communautaire, la participation à des groupes de quartier et la prise de responsabilité pour améliorer la qualité de vie dans son environnement",
+      "title4": "التربية المدنية",
+      "description4": "L'éducation civique est une composante essentielle de la citoyenneté, qui vise à donner aux citoyens les connaissances, les compétences et les valeurs nécessaires pour participer efficacement à la vie politique et civique",
+      "title5": "مسؤولية",
+      "description5": "Les citoyens ont des responsabilités envers leur communauté, notamment respecter les lois, voter, payer des impôts, respecter les droits des autres, être tolérants, protéger l'environnement et participer à la vie communautaire",
+      "title6": "تنوع",
+      "description6": "La diversité est une réalité de la plupart des sociétés, et la citoyenneté implique de respecter les différences culturelles, religieuses et ethniques des autres, ainsi que de promouvoir l'inclusion et l'égalité",
+      "title7": "الحوار والمداولة",
+      "description7": "Le dialogue et la délibération sont des éléments clés de la citoyenneté, car ils permettent aux citoyens de discuter de questions importantes, de partager des opinions et de trouver des solutions ensemble",
+      "title8": "مسئولية",
+      "description8": "La responsabilisation est un élément important de la citoyenneté, car elle implique que les gouvernements et les dirigeants soient responsables de leurs actions, rendent des comptes à la population et respectent les droits des citoyens",
+      "title9": "المشاركة في الحياة الاقتصادية",
+      "description9": "La participation à la vie économique est un élément important de la citoyenneté, car elle implique la participation à l'économie, la compréhension de son fonctionnement et de ses impacts, ainsi que la promotion de l'équité économique"
+    }
+  },
+  "actualites": {
+    "name": "اكتشف آخر الأخبار!",
+    "allPost": "مشاهدة جميع المقالات",
+    "description": "Cette section revient sur l’actualité du projet et sera une vitrine sur tout ce qui se fait en matière d’engagement et de participation citoyenne en Mauritanie."
   }
 }
