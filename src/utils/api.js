@@ -1,3 +1,31 @@
+export async function navQuery(lang) {
+  const response = await fetch(import.meta.env.WORDPRESS_API_URL, {
+    method: 'post',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      query: `{
+              menuItems(where: {location: ${lang}}) {
+    nodes {
+      parentId
+      label
+      uri
+      childItems {
+        nodes {
+          label
+          uri                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        }
+      }
+    }
+  }
+            }
+            `
+    })
+  });
+  const { data } = await response.json();
+  const menuItems = Object.values(data)[0].nodes.filter(node => node.parentId === null);
+  return menuItems;
+}
+
 export async function newsPagePostsQuery(lang) {
   const response = await fetch(import.meta.env.WORDPRESS_API_URL, {
     method: 'post',

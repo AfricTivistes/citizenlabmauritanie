@@ -1,6 +1,7 @@
 {
   "site": {
     "langue": "FR",
+    "menu-top": "GATSBY_HEADER_MENU",
     "title": "Africtivistes Citizen Lab Mauritanie — Votre plateforme d’information citoyenne",
     "slogan": "Votre plateforme d’information ",
     "slogan1": "citoyenne ",

@@ -28,7 +28,7 @@ const CONFIG = {
   googleAnalyticsId: false, // or "G-XXXXXXXXXX",
   googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
 
-  actualitues: {
+  actualites: {
     disabled: false,
     postsPerPage: 4,
 
@@ -39,7 +39,7 @@ const CONFIG = {
     },
 
     list: {
-      pathname: 'actualitues', // Blog main path, you can change this to "articles" (/articles)
+      pathname: 'actualites', // Blog main path, you can change this to "articles" (/articles)
       noindex: false,
       disabled: false,
     },
@@ -87,7 +87,7 @@ const CONFIG = {
   },
 };
 
-export const SITE = { ...CONFIG, blog: undefined, actualitues: undefined };
+export const SITE = { ...CONFIG, blog: undefined, actualites: undefined };
 export const BLOG = CONFIG.blog;
-export const ACTUALITUES = CONFIG.actualitues;
+export const ACTUALITUES = CONFIG.actualites;
 export const DATE_FORMATTER = CONFIG.dateFormatter;
