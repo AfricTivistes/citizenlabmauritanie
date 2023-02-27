@@ -74,10 +74,10 @@ export const footerData = {
     {
       title: 'navigation.citizenLab',
       links: [
-        { text: 'navigation.a-propos', href: '#' },
-        { text: 'navigation.initiative', href: '#' },
+        { text: 'navigation.a-propos', href: getPermalink(t("navigation.a-propos-link")) },
+        { text: 'navigation.initiative', href: getPermalink(t("navigation.initiative-link")) },
         { text: 'navigation.equipe', href: '#' },
-        { text: 'navigation.contact', href: '#' },
+        { text: 'navigation.contact', href: getPermalink(t("navigation.contact-link")) },
       ],
     },
     {
