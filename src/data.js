@@ -65,7 +65,7 @@ export const headerData = {
     },
   ],
   actions: [
-    { type: 'button', text: "navigation.telecharger", href: 'https://citizenlabmauritanie.netlify.app' }
+    { type: 'button', text: "navigation.telecharger", href: '#' }
   ],
 };
 
