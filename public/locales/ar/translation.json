@@ -9,7 +9,9 @@
     "info-projet": "تعزيز مشاركة المواطنين والديمقراطية التشاركية. وكذلك لتحفيز الديناميكيات الجديدة من خلال استخدام تكنولوجيا ",
     "more": "اقرأ أكثر",
     "info-seminaire": "ندوة إطلاق",
-    "link-seminaire": "/ar/ندوة-إطلاق-africtivistes-citizenlab-موريتانيا/"
+    "link-seminaire": "/ar/ندوة-إطلاق-africtivistes-citizenlab-موريتانيا/",
+    "suivant": "التالي",
+    "precedent": "سابقة"
   },
   "navigation": {
     "citizenLab": "CitizenLab",
@@ -114,7 +116,7 @@
     "allPost": "مشاهدة جميع المقالات",
     "description": "يستعرض هذا القسم أخبار المشروع وسيكون عرضًا لكل ما يتم القيام به فيما يتعلق بإشراك المواطنين ومشاركتهم في موريتانيا."
   },
-  "stats":{
+  "stats": {
     "application": "تطبيق جوال شامل",
     "langues": "اللغات المحلية",
     "jeunes": "شارك الشباب",
