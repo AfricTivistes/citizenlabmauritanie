@@ -9,7 +9,9 @@
     "info-projet": "Promouvoir la participation citoyenne et la démocratie participative en impulsant de nouvelles dynamiques par l’utilisation de la technologie citoyenne (civic tech)",
     "more": "Lire plus",
     "info-seminaire": "Seminaire de lancement",
-    "link-seminaire": "/seminaire-de-lancement-africtivistes-citizenlab-mauritanie/"
+    "link-seminaire": "/seminaire-de-lancement-africtivistes-citizenlab-mauritanie/",
+    "suivant": "Suivant",
+    "precedent": "Précédent"
   },
   "navigation": {
     "citizenLab": "CitizenLab",
@@ -114,7 +116,7 @@
     "allPost": "Voir tous les articles",
     "description": "Cette section revient sur l’actualité du projet et sera une vitrine sur tout ce qui se fait en matière d’engagement et de participation citoyenne en Mauritanie."
   },
-  "stats":{
+  "stats": {
     "application": "Application mobile inclusif",
     "langues": "Langues locales",
     "jeunes": "Jeunes engagés",
