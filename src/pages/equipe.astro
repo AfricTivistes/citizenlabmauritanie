@@ -1,0 +1,41 @@
+---
+import { t, changeLanguage } from "i18next";
+import { SITE } from "~/config.mjs";
+import Layout from "~/layouts/PageLayout.astro";
+import Stats from "~/components/widgets/Stats.astro";
+import Features from "~/components/widgets/Features.astro";
+import EquipeTemplate from "~/components/widgets/EquipeTemplate.astro";
+
+changeLanguage("fr");
+
+const meta = {
+    title: SITE.title,
+    description: SITE.description,
+    dontUseTitleTemplate: true,
+};
+---
+
+
+
+<Layout {meta}>
+    <Features
+    highlight={t('heroObjectifs.highlight')}
+    title={t('heroObjectifs.title')}
+    subtitle="Membres de l'equipe"
+  />
+
+<EquipeTemplate/>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    items={[
+      { name: t('stats.application'), value: '1' },
+      { name: t('stats.langues'), value: '4' },
+      { name: t('stats.jeunes'), value: '17' },
+      { name: t('stats.internautes'), value: '1,73M' },
+    ]}
+  />
+
+
+</Layout>
