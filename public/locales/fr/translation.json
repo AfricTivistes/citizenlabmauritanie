@@ -121,5 +121,8 @@
     "langues": "Langues locales",
     "jeunes": "Jeunes engagés",
     "internautes": "Internautes"
+  },
+  "mediatheque": {
+    "description": "Un aperçu du projet, de nos campagnes et de nos événements, ainsi que des témoignages de personnes qui ont bénéficié de nos actions"
   }
 }
