@@ -1,4 +1,5 @@
 import { DATE_FORMATTER } from '~/config.mjs';
+import { t } from 'i18next';
 
 const formatter =
   DATE_FORMATTER ||
@@ -10,7 +11,7 @@ const formatter =
   });
 
 /* eslint-disable no-mixed-spaces-and-tabs */
-export const getFormattedDate = (date: Date) => (date ? formatter.format(date) : '');
+export const getFormattedDate = (date: Date) => (date ? formatter[t("site.langue")].format(date) : '');
 
 export const trim = (str = '', ch?: string) => {
   let start = 0,

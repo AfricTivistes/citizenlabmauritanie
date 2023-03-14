@@ -222,6 +222,27 @@ export async function getAllMembers() {
     })
   });
   const { data } = await response.json();
-  console.log(data.equipes.nodes)
   return data.equipes.nodes;
+}
+
+export async function getYoutubeURL() {
+  const response = await fetch(import.meta.env.WORDPRESS_API_URL, {
+    method: 'post',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      query: `{
+        mediatheques(where: {status: PUBLISH, orderby: {field: DATE, order: ASC}}) {
+                      nodes {
+                        lien {
+                          lien
+                        }
+                        title
+                      }
+                    }
+        }      
+      `
+    })
+  });
+  const { data } = await response.json();
+  return data.mediatheques.nodes;
 }
