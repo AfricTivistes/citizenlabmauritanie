@@ -34,7 +34,7 @@ const CONFIG = {
   },
 
 
-  googleAnalyticsId: false, // or "G-XXXXXXXXXX",
+  googleAnalyticsId: "G-NG19Q65D5Z", // or "G-XXXXXXXXXX",
   googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
 
   actualites: {
