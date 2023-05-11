@@ -140,6 +140,23 @@ export async function getNodeByURI(uri) {
                     }
                   }
                 }
+                allPublication {
+                  nodes {
+                    content
+                    date
+                    lien {
+                      lien
+                    }
+                    featuredImage {
+                      node {
+                        altText
+                        mediaItemUrl
+                      }
+                    }
+                    title
+                    uri
+                  }
+                }
               }
             `,
       variables: {
@@ -167,6 +184,11 @@ export async function getAllUris() {
                 uri
               }
             }
+            allPublication {
+            nodes {
+              uri
+            }
+          }
           }
           `
     })
@@ -245,4 +267,37 @@ export async function getYoutubeURL() {
   });
   const { data } = await response.json();
   return data.mediatheques.nodes;
+}
+
+
+export async function PubsPagePostsQuery() {
+  const response = await fetch(import.meta.env.WORDPRESS_API_URL, {
+    method: 'post',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      query: `{
+                allPublication {
+                  nodes {
+                    title
+                    date
+                    uri
+                    excerpt
+                    content
+                    lien {
+                      lien
+                    }
+                    featuredImage {
+                      node {
+                        altText
+                        mediaItemUrl
+                      }
+                    }
+                  }
+                }
+              }
+            `
+    })
+  });
+  const { data } = await response.json();
+  return data.allPublication.nodes;
 }
