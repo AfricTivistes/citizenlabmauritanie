@@ -94,9 +94,38 @@ const CONFIG = {
       disabled: false,
     },
   },
+  publications: {
+    disabled: false,
+    postsPerPage: 4,
+
+    post: {
+      permalink: '/%slug%', // Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      noindex: false,
+      disabled: false,
+    },
+
+    list: {
+      pathname: 'publications', // Publications main path, you can change this to "articles" (/articles)
+      noindex: false,
+      disabled: false,
+    },
+
+    category: {
+      pathname: 'category', // Category main path /category/some-category
+      noindex: true,
+      disabled: false,
+    },
+
+    tag: {
+      pathname: 'tag', // Tag main path /tag/some-tag
+      noindex: true,
+      disabled: false,
+    },
+  },
 };
 
 export const SITE = { ...CONFIG, blog: undefined, actualites: undefined };
 export const BLOG = CONFIG.blog;
 export const ACTUALITUES = CONFIG.actualites;
+export const PUBLICATIONS = CONFIG.publications;
 export const DATE_FORMATTER = CONFIG.dateFormatter;

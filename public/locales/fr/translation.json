@@ -53,7 +53,8 @@
     "r6": "AfricTivistes CitizenLab Mauritanie s'inscrit dans la continuité des efforts de démocratisation en Mauritanie. Il vient compléter les actions déjà entreprises pour renforcer la transparence, la participation citoyenne et la démocratie dans le pays"
   },
   "headline": {
-    "actualite": "L'actualité"
+    "actualite": "L'actualité",
+    "publication": "Les publications"
   },
   "heroObjectifs": {
     "highlight": "AfricTivistes",
@@ -124,5 +125,8 @@
   },
   "mediatheque": {
     "description": "Un aperçu du projet, de nos campagnes et de nos événements, ainsi que des témoignages de personnes qui ont bénéficié de nos actions"
+  },
+  "publication":{
+    "description": "Cette section présente les travaux de recherche et les documents publiés par le Citizen Lab Mauritanie. elle met en valeur les rapports, études, analyses et autres publications qui couvrent des sujets tels que les droits de l'homme, la gouvernance et la démocratie en Mauritanie."
   }
 }
