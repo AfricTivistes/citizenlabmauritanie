@@ -1,0 +1,41 @@
+---
+import { t, changeLanguage } from "i18next";
+import { SITE, PUBLICATIONS } from "~/config.mjs";
+import Layout from "~/layouts/PageLayout.astro";
+import BlogList from "~/components/blog/wpListPub.astro";
+import Headline from "~/components/blog/Headline.astro";
+import Pagination from "~/components/blog/Pagination.astro";
+import { PUBLICATIONS_BASE } from "~/utils/permalinks";
+import { PubsPagePostsQuery } from "~/utils/api";
+
+changeLanguage("fr");
+
+export async function getStaticPaths({ paginate }) {
+    if (PUBLICATIONS?.disabled || PUBLICATIONS?.list?.disabled)
+        return [];
+    return paginate(await PubsPagePostsQuery(), {
+        params: { publications: PUBLICATIONS_BASE || undefined },
+        pageSize: PUBLICATIONS.postsPerPage,
+    });
+}
+const { page } = Astro.props;
+const currentPage = page.currentPage ?? 1;
+const meta = {
+    title: `Publications${currentPage > 1 ? ` — Page ${currentPage}` : ""}`,
+    description: SITE.description,
+    noindex: PUBLICATIONS?.list?.noindex || currentPage > 1,
+    ogType: "blog",
+};
+---
+
+<Layout {meta}>
+  <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
+    <Headline
+      subtitle={t("publication.description")}
+    >
+      {t("headline.publication")}
+    </Headline>
+    <BlogList posts={page.data} />
+    <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
+  </section>
+</Layout>
