@@ -12,7 +12,7 @@ export async function navQuery(lang) {
       childItems {
         nodes {
           label
-          uri                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+          uri                       
         }
       }
     }
@@ -32,7 +32,7 @@ export async function newsPagePostsQuery(lang) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       query: `{
-                posts(where: {language: ${lang}}) {
+                posts(first:1000, where: {language: ${lang}}) {
                   nodes {
                     date
                     uri
@@ -231,7 +231,7 @@ export async function getYoutubeURL() {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       query: `{
-        mediatheques(where: {status: PUBLISH, orderby: {field: DATE, order: ASC}}) {
+        mediatheques(where: {status: PUBLISH, orderby: {field: DATE, order: DESC}}) {
                       nodes {
                         lien {
                           lien
