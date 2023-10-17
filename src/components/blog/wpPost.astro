@@ -12,11 +12,11 @@ import type { Post } from '~/types';
 
 export interface Props {
   post: Post;
-  url: string | URL;
 }
 
-const { post, url } = Astro.props;
+const { post } = Astro.props;
 const datePost = Date.parse(post.date);
+const currentPath = Astro.url.href;
 ---
 
 <section class="py-8 sm:py-16 lg:py-20 mx-auto">
@@ -91,7 +91,7 @@ const datePost = Date.parse(post.date);
     </div>
     <div class="mx-auto px-6 sm:px-6 max-w-3xl mt-8 flex justify-between flex-col sm:flex-row">
       <PostTags tags={post.terms.nodes} class="mr-5" />
-      <SocialShare url={url} text={post.title} class="mt-5 sm:mt-1 align-middle text-gray-500 dark:text-slate-600" />
+      <SocialShare url={currentPath} text={post.title} class="mt-5 sm:mt-1 align-middle text-gray-500 dark:text-slate-600" />
     </div>
   </article>
 </section>
