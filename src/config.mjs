@@ -4,7 +4,7 @@ import { t } from "i18next";
 const CONFIG = {
   name: 'Africtivistes Citizen Lab Mauritanie',
 
-  origin: 'https://citizenlabmauritanie.netlify.app',
+  origin: 'https://citizenlabmauritanie.org',
   basePathname: '/',
   trailingSlash: false,
 
