@@ -67,7 +67,7 @@ export async function findLatestPosts(lang) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       query: `{
-                posts(first: 4 where: {language: ${lang}}) {
+                posts(first: 8 where: {language: ${lang}}) {
                   nodes {
                     date
                     uri

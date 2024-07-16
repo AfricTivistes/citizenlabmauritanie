@@ -27,7 +27,7 @@ const meta = {
   <Hero
     callToAction={{
       text: t('navigation.telecharger'),
-      href: '#',
+      href: '/publication',
       icon: 'tabler:download',
     }}
     callToAction2={{ text: t('site.more'), href: '#features' }}
@@ -42,6 +42,20 @@ const meta = {
       {t('site.info-projet')}
     </Fragment>
   </Hero>
+
+    <!-- HighlightedPosts Widget ******* -->
+
+  <LatestPosts
+    title={t('actualites.name')}
+    information={t('actualites.description')}
+    postIds={[
+      'get-started-website-with-astro-tailwind-css.md',
+      'how-to-customize-astrowind-to-your-brand.md',
+      'useful-resources-to-create-websites.md',
+      'astrowind-template-in-depth.md',
+    ]}
+  />
+
 
   <!-- Note Widget ******************* -->
 
@@ -243,18 +257,6 @@ const meta = {
     ]}
   />
 
-  <!-- HighlightedPosts Widget ******* -->
-
-  <LatestPosts
-    title={t('actualites.name')}
-    information={t('actualites.description')}
-    postIds={[
-      'get-started-website-with-astro-tailwind-css.md',
-      'how-to-customize-astrowind-to-your-brand.md',
-      'useful-resources-to-create-websites.md',
-      'astrowind-template-in-depth.md',
-    ]}
-  />
 
   <!-- FAQs Widget ******************* -->
 
