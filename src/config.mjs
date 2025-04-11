@@ -13,7 +13,8 @@ const CONFIG = {
     'AfricTivistes CitizenLab Mauritanie 🇲🇷 est une fabrique citoyenne dont le but est d’appuyer, d’accompagner et d’outiller les acteurs de la société civile mauritanienne par la formation, le développement d’outils et l’accompagnement à l’innovation et à la co-création.',
   defaultImage: defaultImage,
 
-  defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  // defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'light:only', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
   language: '',
   textDirection: 'ltr',

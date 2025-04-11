@@ -1,7 +1,7 @@
 ---
 import { Icon } from 'astro-icon';
 import Logo from '~/components/Logo.astro';
-import ToggleTheme from '~/components/common/ToggleTheme.astro';
+// import ToggleTheme from '~/components/common/ToggleTheme.astro';
 import ToggleMenu from '~/components/common/ToggleMenu.astro';
 
 import { getHomePermalink, getAsset } from '~/utils/permalinks';
@@ -37,7 +37,7 @@ const {
   links = [],
   actions = [],
   isSticky = false,
-  showToggleTheme = false,
+  // showToggleTheme = false,
   showRssFeed = false,
   position = 'center',
 } = Astro.props;
@@ -56,7 +56,7 @@ const {
         <Logo />
       </a>
       <div class="flex items-center md:hidden">
-        {showToggleTheme && <ToggleTheme />}
+        <!-- {showToggleTheme && <ToggleTheme />} -->
         <ToggleMenu />
       </div>
     </div>
@@ -108,7 +108,7 @@ const {
     </nav>
     <div class:list={[{ 'ml-auto': position === 'left' }, 'md:self-center flex items-center md:mb-0']}>
       <div class="hidden items-center md:flex">
-        {showToggleTheme && <ToggleTheme iconClass="w-5 h-5" />}
+        <!-- {showToggleTheme && <ToggleTheme iconClass="w-5 h-5" />} -->
 
         {
           showRssFeed && (
